@@ -1,0 +1,327 @@
+:root{
+    --secbackground: rgb(18,18,18);
+    --background: black;
+    --text1:white;
+    --text2: #9c9c9c;
+    --fontsize: 20px;
+}
+body{
+    background-color: var(--background);
+    font-family:"Manrope";
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.home{
+    width: 350px;
+    background-color: var(--secbackground);
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-family:"Manrope";
+    font-size: var(--fontsize);
+    font-weight: 600;
+}
+.lib{
+    width: 350px;
+    background-color: var(--secbackground);
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    min-height: 60vh;
+    position: relative;
+}
+li>img:nth-child(2){
+    z-index: -1;
+}
+.content{
+    width: 1900px;
+    background-color: var(--secbackground);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+.home>ul>li:nth-child(1)>img{
+    width: 100px;
+}
+.home>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.home>ul>li{
+    display: flex;
+    gap: 10px;
+}
+.home>ul>li:nth-child(2){
+    color: var(--text1);
+}
+.home>ul>li:nth-child(3){
+    color: var(--text2);
+}
+
+.text{
+    color: var(--text2);
+    display: flex;
+    font-size: var(--fontsize);
+    font-weight: 600;
+    gap: 10px;
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+
+.addlib{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    color: var(--text2);
+    position: absolute;
+    bottom: 10px;
+    width: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text2);
+}
+.arrows>img{
+    height:25px;
+    width: 25px;
+    background-color: var(--background);
+    border-radius: 10px;
+}
+.arrows{
+    display: flex;
+    gap: 20px;
+}
+.sign{
+    display: flex;
+    gap: 20px;
+}
+.header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+button{
+    font-size: var(--fontsize);
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 800;
+    width:80px;
+}
+button:hover{
+    scale: 1.1}
+.Signup{
+    background: transparent;
+    color: var(--text2);
+    border: none;
+    cursor: pointer;
+}
+.Signup:hover{
+    color: var(--text1);
+}
+.LogIn{
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+h1{
+    color: var(--text1);
+    font-size: 23px;
+    font-weight: 600;
+}
+.card{
+    width: 200px;
+    color: var(--text1);
+    position: relative;
+}
+.card>img{
+    margin: 5px;
+    width: 190px;
+    height: 190px;
+    border-radius: 6px;
+}
+.card>p{
+    margin: 5px;
+    font-size: 12px;
+    height: 20px;
+    color: var(--text2);
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-height: 72vh;
+    overflow-y: scroll;
+}
+.name{
+    font-size: var(--fontsize);
+    margin: 5px;
+}
+.play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: rgb(11, 198, 11);
+    position: absolute;
+    top: 190px;
+    right: 10px;
+    transition: all 0.1s cubic-bezier(1,-0.28, 1, 1);
+    opacity: 0;
+}
+.card:hover .play{
+    opacity: 100%;
+    transform: translateY(-40px);
+}
+.card:hover{
+    background-color: rgb(54, 52, 52);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px; /* You can adjust this according to your preference */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #141414; /* You can set the color of the track here */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* You can set the color of the handle here */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* You can set the color of the handle on hover here */
+  }
+
+  .playbar{
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+    color: var(--text1);
+    font-size: var(--fontsize);
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+    height: 10vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hamburger{
+    z-index: -1;
+}
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 60px;
+}
+.buttons>img{
+    cursor: pointer;
+}
+.buttons>div>img{
+    cursor: pointer;
+}
+.playpause{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.songlist>ul>li{
+    list-style-type: decimal;
+    cursor: pointer;
+}
+.songlist{
+    color: var(--text1);
+    max-height: 45vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.seekbar{
+    background-color:var(--text2);
+    height: 4px;
+    width:90%;
+    margin-top: 12px;
+    cursor:pointer;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+}
+.vol{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+#volume{
+    cursor: pointer;
+}
+.vol>img{
+    cursor: pointer;
+}
+.uppercontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.songname{
+    max-width: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--text1);
+    padding-left: 8px;
+}
+.timvol{
+    width: 250px;
+    height: 32px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+

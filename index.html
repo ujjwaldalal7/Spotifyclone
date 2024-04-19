@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="home">
+                <ul>
+                    <li><img src="logo.svg"> <img id="close" src="close.svg"></li>
+                    <li><img src="home.svg"> Home</li>
+                    <li><img src="search.svg"> Search</li>
+                </ul>
+            </div>
+            <div class="lib">
+                <div class="addlib">
+                    <div class="text">
+                        <img src="library.svg" alt="">
+                        Your Library
+                    </div>
+                    <div class="newlib">
+                        <img src="add.svg" alt="">
+                    </div>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="arrows">
+                    <div class="hamburger"><img src="menu.svg"></div>
+                    <img src="left.svg" alt="">
+                    <img src="right.svg" alt="">
+                </div>
+                <div class="sign">
+                    <button class="Signup">Sign up</button>
+                    <button class="LogIn">Log In</button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h1>Playlists</h1>
+                <div class="cardcontainer">
+
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="uppercontent">
+                    <div class="songname">
+
+                    </div>
+                    <div class="buttons">
+                        <img src="shuffle.svg" alt="">
+                        <img src="backward.svg" id="previous" alt="">
+                        <div class="playpause" id="play"><img src="play.svg" alt=""></div>
+                        <img src="forward.svg" id="next" alt="">
+                        <img src="repeat.svg" alt="">
+                    </div>
+                    <div class="timvol">
+                        <div class="vol">
+                            <img src="volume.svg" id="volimg">
+                            <div class="range">
+                                <input type="range" name="volume" id="volume">
+                            </div>
+                        </div>
+                        <div class="duration">
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="seekbar">
+                    <div class="circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+@media  (max-height:1000px) and (max-width:500px){
+.left{
+    position: absolute;
+    left:-100%;
+    width:50vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 0;
+    overflow: hidden;
+    background: black;
+    transition: all 0.3s linear;
+    z-index: 3;
+    width:90vw
+}
+.home{
+    margin: 0;
+}
+.lib{
+    margin: 0;
+}
+.content{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.playbar{
+    position:fixed;
+    bottom:15px;
+    right: 10px;
+    max-width: 95%;
+    font-size: 12px;
+    position: relative;
+    bottom:18px;
+}
+.main{
+    max-height: 98vh;
+    gap:0
+}
+.header{
+    max-height: 10vh;
+}
+.card{
+    width: 45%;
+    height: auto;
+    color: var(--text1);
+    position: relative;
+}
+.card>img{
+    width: 95%;
+    height: 180px;
+    border-radius: 6px;
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  .playbar{
+    height: 20vh;
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+.uppercontent{
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    gap:5px;
+    position: relative;
+}
+.songname{
+    max-height:32px;
+    width:20vw;
+    color: white;
+    font-size: 12px;
+    display: none;
+}
+.buttons{
+    margin: 0;
+    gap: 10px;
+    padding: 0;
+}
+.buttons>img:nth-child(1){
+    display: none;
+}
+.buttons>img:nth-child(5){
+    display: none;
+}
+.hamburger{
+    z-index: 1;
+}
+li>img:nth-child(2){
+    z-index: 1;
+}
+}
+#close{
+    margin-left: 25vw;
+}
